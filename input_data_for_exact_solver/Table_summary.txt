@@ -1,141 +1,21 @@
-name type n m
-arrhythmia.arff real 452 263
-balance-scale.arff real 625 5
-cpu.arff real 209 7
-dermatology.arff real 358 35
-ecoli.arff real 336 8
-glass.arff real 214 10
-haberman.arff real 306 4
-heart-statlog.arff real 270 14
-iono.arff real 351 35
-iris.arff real 150 5
-letter.arff real 20000 17
-segment.arff real 2310 20
-sonar.arff real 208 61
-tae.arff real 151 6
-thy.arff real 215 6
-vehicle.arff real 846 19
-wdbc.arff real 569 32
-wine.arff real 178 14
-wisc.arff real 699 10
-zoo.arff real 101 17
-2d-10c.arff artificial 2990 3
-2d-20c-no0.arff artificial 1517 3
-2d-3c-no123.arff artificial 715 3
-2d-4c-no4.arff artificial 863 3
-2d-4c-no9.arff artificial 876 3
-2d-4c.arff artificial 1261 3
-2dnormals.arff artificial 1000 3
-2sp2glob.arff artificial 2000 3
-3-spiral.arff artificial 312 3
-3MC.arff artificial 400 3
-aggregation.arff artificial 788 3
-aml28.arff artificial 804 3
-atom.arff artificial 800 4
-banana.arff artificial 4811 3
-birch-rg2.arff artificial 100000 2
-blobs.arff artificial 300 3
-cassini.arff artificial 1000 3
-chainlink.arff artificial 1000 4
-circle.arff artificial 1000 3
-cluto-t4-8k.arff artificial 8000 3
-cluto-t5-8k.arff artificial 8000 3
-cluto-t7-10k.arff artificial 10000 3
-cluto-t8-8k.arff artificial 8000 3
-complex8.arff artificial 2551 3
-complex9.arff artificial 3031 3
-compound.arff artificial 399 3
-cuboids.arff artificial 1002 4
-cure-t0-2000n-2D.arff artificial 2000 3
-cure-t1-2000n-2D.arff artificial 2000 3
-cure-t2-4k.arff artificial 4200 3
-curves1.arff artificial 1000 3
-curves2.arff artificial 1000 3
-D31.arff artificial 3100 3
-dartboard1.arff artificial 1000 3
-dartboard2.arff artificial 1000 3
-dense-disk-3000.arff artificial 3000 3
-dense-disk-5000.arff artificial 5000 3
-diamond9.arff artificial 3000 3
-disk-1000n.arff artificial 1000 3
-disk-3000n.arff artificial 3000 3
-disk-4000n.arff artificial 4000 3
-disk-4500n.arff artificial 4500 3
-disk-4600n.arff artificial 4600 3
-disk-5000n.arff artificial 5000 3
-disk-6000n.arff artificial 6000 3
-donut1.arff artificial 1000 3
-donut2.arff artificial 1000 3
-donut3.arff artificial 999 3
-donutcurves.arff artificial 1000 3
-dpb.arff artificial 4000 3
-dpc.arff artificial 1000 3
-DS-577.arff artificial 577 3
-DS-850.arff artificial 850 3
-ds2c2sc13.arff artificial 588 3
-ds3c3sc6.arff artificial 905 3
-ds4c2sc8.arff artificial 485 3
-elliptical_10_2.arff artificial 500 3
-elly-2d10c13s.arff artificial 2796 3
-engytime.arff artificial 4096 3
-flame.arff artificial 240 3
-fourty.arff artificial 1000 3
-gaussians1.arff artificial 100 3
-golfball.arff artificial 4002 4
-hepta.arff artificial 212 4
-hypercube.arff artificial 800 4
-impossible.arff artificial 3673 3
-insect.arff artificial 30 4
-jain.arff artificial 373 3
-long1.arff artificial 1000 3
-long2.arff artificial 1000 3
-long3.arff artificial 1000 3
-longsquare.arff artificial 900 3
-lsun.arff artificial 400 3
-mopsi-finland.arff artificial 13467 2
-mopsi-joensuu.arff artificial 4590 2
-pathbased.arff artificial 300 3
-pmf.arff artificial 649 4
-R15.arff artificial 600 3
-rings.arff artificial 1000 3
-s-set1.arff artificial 5000 3
-s-set2.arff artificial 5000 3
-s-set3.arff artificial 5000 2
-s-set4.arff artificial 5000 2
-shapes.arff artificial 1000 3
-simplex.arff artificial 500 4
-sizes1.arff artificial 1000 3
-sizes2.arff artificial 1000 3
-sizes3.arff artificial 1000 3
-sizes4.arff artificial 1000 3
-sizes5.arff artificial 1000 3
-smile1.arff artificial 1000 3
-smile2.arff artificial 1000 3
-smile3.arff artificial 1000 3
-spherical_4_3.arff artificial 400 4
-spherical_5_2.arff artificial 250 3
-spherical_6_2.arff artificial 300 3
-spiral.arff artificial 1000 3
-spiralsquare.arff artificial 1500 3
-square1.arff artificial 1000 3
-square2.arff artificial 1000 3
-square3.arff artificial 1000 3
-square4.arff artificial 1000 3
-square5.arff artificial 1000 3
-st900.arff artificial 900 3
-target.arff artificial 770 3
-tetra.arff artificial 400 4
-threenorm.arff artificial 1000 3
-triangle1.arff artificial 1000 3
-triangle2.arff artificial 1000 3
-twenty.arff artificial 1000 3
-twodiamonds.arff artificial 800 3
-wingnut.arff artificial 1016 3
-xclara.arff artificial 3000 3
-xor.arff artificial 1000 4
-zelnik1.arff artificial 299 3
-zelnik2.arff artificial 303 3
-zelnik3.arff artificial 266 3
-zelnik4.arff artificial 622 3
-zelnik5.arff artificial 512 3
-zelnik6.arff artificial 238 3
+name type n m K
+arrhythmia.arff artificial 452 263 13
+balance-scale.arff artificial 625 5 3
+cpu.arff artificial 209 7 0
+dermatology.arff artificial 358 35 6
+ecoli.arff artificial 336 8 8
+glass.arff artificial 214 10 7
+haberman.arff artificial 306 4 2
+heart-statlog.arff artificial 270 14 2
+iono.arff artificial 351 35 2
+iris.arff artificial 150 5 3
+letter.arff artificial 20000 17 26
+segment.arff artificial 2310 20 7
+sonar.arff artificial 208 61 2
+tae.arff artificial 151 6 3
+thy.arff artificial 215 6 3
+vehicle.arff artificial 846 19 4
+wdbc.arff artificial 569 32 2
+wine.arff artificial 178 14 3
+wisc.arff artificial 699 10 2
+zoo.arff artificial 101 17 7
