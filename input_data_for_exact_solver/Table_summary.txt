@@ -1,7 +1,7 @@
 name type n m K
 arrhythmia.arff real 452 263 13
 balance-scale.arff real 625 5 3
-cpu.arff real 209 7 0
+cpu.arff real 209 7 116
 dermatology.arff real 358 35 6
 ecoli.arff real 336 8 8
 glass.arff real 214 10 7
