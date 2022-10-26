@@ -1,0 +1,14 @@
+arrhythmia  nominal, linear
+balance-scale  numeric and discrete
+dermatology numeric, linear
+ecoli numeric, linear
+glass numeric, linear
+haberman numeric, linear
+heart-statlog numeric, linear + nominal (sex, chest pain type)
+iono numeric, linear
+iris numeric, linear
+sonar numeric, linear
+tae 2 binary, 2 categorical, 1 numeric
+thy numeric, linear
+wine numeric, linear
+zoo all binary 
