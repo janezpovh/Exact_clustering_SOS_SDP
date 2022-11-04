@@ -6,7 +6,6 @@ from os import listdir
 from os.path import isfile,join
 import pandas as pd
 import sys
-import inspect
 
 def read_sample_labels(filepath):
     file = open(filepath,'r')
@@ -16,9 +15,9 @@ def read_sample_labels(filepath):
         y = [x for x in fline.split()]
         # x = np.concatenate(x,np.asarray(y))
         if "class" in fline:
-        	class_idx = y.index("\"class\"")
+            class_idx = y.index("\"class\"")
         elif "Class" in fline:
-        	class_idx = y.index("\"Class\"")
+            class_idx = y.index("\"Class\"")
         if len(y)==2:
             n,d =y[0],y[1]
         elif len(y) and "class" not in fline and "Class" not in fline:
@@ -52,7 +51,6 @@ def clustering_heu_method(results_folder,data_folder,dataname,heu):
 
     # breakpoint()
     cluster_table.to_csv(results_path)
-
 
 def clustering_metrics_true_labels(data_folder,clustering_folder,evaluation_folder,dataname):
     data_label_path = data_folder + dataname + '_with_clust_labels.txt'
@@ -95,14 +93,9 @@ def clustering_metrics_true_labels(data_folder,clustering_folder,evaluation_fold
 
         for func in metrics_list_intrin:
             metric_scores =[]
-
             for k in klist:
-
-            	labels_pred = labels_pred_table[k]
-            	# print(labels_pred)
-            	# print(labels_true)
-            	metric_scores.append(func(X,labels_pred))
-
+                labels_pred = labels_pred_table[k]
+                metric_scores.append(func(X,labels_pred))
         #  add row for the ground true label
             metric_scores.append(func(X,labels_true))
             metric_scores_summary[func.__name__]=metric_scores
@@ -134,17 +127,26 @@ def combinefile(datafolderpath,filefolderpath,combinedpath):
 
 
 def main():
-    data_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/input_data_for_exact_solver/real_data/'
-    results_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_clustering/Other_Clustering/'
-    evaluation_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods'
-    summaryfile = '/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods/real_data_summary_all_label_clust_eval.csv'
+    print("hello")
+   # data_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/input_data_for_exact_solver/real_data/'
+   # results_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_clustering/Other_Clustering/'
+   # evaluation_folder='/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods'
+   # summaryfile = '/Users/shzhao/Documents/GitHub/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods/real_data_summary_all_label_clust_eval.csv'
+
+    data_folder='C:/Users/janez/Documents/MATLAB/jpcode/Exact_clustering_SOS_SDP/input_data_for_exact_solver/real_data/'
+    results_folder='C:/Users/janez/Documents/MATLAB/jpcode/Exact_clustering_SOS_SDP/Results/Results_clustering/Other_Clustering/'
+    evaluation_folder='C:/Users/janez/Documents/MATLAB/jpcode/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods/'
+    summaryfile = 'C:/Users/janez/Documents/MATLAB/jpcode/Exact_clustering_SOS_SDP/Results/Results_quality_of_clusters/other_methods/real_data_summary_all_label_clust_eval_test.csv'
 
 
-    dataname_real_list=['dermatology','ecoli','glass','haberman','heart-statlog','iono','iris','sonar','tae',
-    'thy','wine','wisc','zoo']
-    dataname_artficial_list=['3-spiral','3MC','blobs','flame','gaussians1','insect',
-    'jain','lsun','pathbased','zelnik1','zelnik2','zelnik6']
+    #dataname_real_list=['dermatology','ecoli','glass','haberman','heart-statlog','iono','iris','sonar','tae',
+    #'thy','wine','wisc','zoo']
+    dataname_real_list=['iris']
+    #dataname_artficial_list=['3-spiral','3MC','blobs','flame','gaussians1','insect',
+    #'jain','lsun','pathbased','zelnik1','zelnik2','zelnik6']
+    dataname_artficial_list=['3-spiral']
     heu_list=[k_means]
+    print("hello\n\n")
 
     for data in dataname_real_list:
         # for heu in heu_list:
