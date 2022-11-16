@@ -1,0 +1,10 @@
+library(fpc)
+library(cluster)
+haberman <- read.csv("~/MATLAB/jpcode/Exact_clustering_SOS_SDP/input_data_for_exact_solver/real_data/haberman_with_clust_labels.txt", sep="")
+colnames(haberman)<-c("Age", "years", "positive_axillary", "class")
+head(haberman)
+
+D<-dist(haberman[,c(1:3)])
+res<-calinhara(haberman[,c(1:3)],haberman$class,cn=max(haberman$class))
+silh<-silhouette(haberman$class,D)
+summary(silh)
