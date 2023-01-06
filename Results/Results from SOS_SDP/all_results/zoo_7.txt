@@ -1,0 +1,147 @@
+
+DATA_PATH, n, d, k: /home/hrgat/Namizje/Shudian/2021.0096-master/src/clustering_c++/git_instances/zoo.txt 101 16 7
+LOG_PATH: /home/hrgat/Namizje/Shudian/2021.0096-master/src/clustering_c++/git_instances_results/zoo_7.txt
+
+BRANCH_AND_BOUND_TOL: 0.0001
+BRANCH_AND_BOUND_PARALLEL: 2
+BRANCH_AND_BOUND_MAX_NODES: 100
+BRANCH_AND_BOUND_VISITING_STRATEGY: 0
+
+SDP_SOLVER_SESSION_THREADS_ROOT: 24
+SDP_SOLVER_SESSION_THREADS: 24
+SDP_SOLVER_FOLDER: /home/hrgat/Namizje/Shudian/SDPNAL+v1.0/
+SDP_SOLVER_TOL: 1e-05
+SDP_SOLVER_VERBOSE: 1
+SDP_SOLVER_MAX_CP_ITER_ROOT: 40
+SDP_SOLVER_MAX_CP_ITER: 20
+SDP_SOLVER_CP_TOL: 1e-05
+SDP_SOLVER_MAX_INEQ: 100000
+SDP_SOLVER_INHERIT_PERC: 1
+SDP_SOLVER_EPS_INEQ: 0.0001
+SDP_SOLVER_EPS_ACTIVE: 1e-06
+SDP_SOLVER_MAX_PAIR_INEQ: 100000
+SDP_SOLVER_PAIR_PERC: 0.05
+SDP_SOLVER_MAX_TRIANGLE_INEQ: 100000
+SDP_SOLVER_TRIANGLE_PERC: 0.05
+
+KMEANS_SDP_BASED: 1
+KMEANS_MAX_ITER: 100
+KMEANS_N_START: 50
+KMEANS_VERBOSE: 0
+
+
+|    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
+|  101|       -1|       0|        -inf|     119.704|     0|        11|       1|       2|      5180|       79      5000       101|    119.704*|    -1     -1|   2.1111e-07|   2.1111e-07|     0|
+
+WALL_TIME: 16 sec
+N_NODES: 1
+AVG_INEQ: 5180
+AVG_CP_ITER: 1
+ROOT_GAP: 2.1111e-07
+GAP: 0
+BEST: 119.704
+
+[matrix size: 101x7; n_nonzero: 101; density: 14.3%]
+
+      (3, 0)          1.0000
+      (9, 0)          1.0000
+     (22, 0)          1.0000
+     (32, 0)          1.0000
+     (53, 0)          1.0000
+     (89, 0)          1.0000
+     (90, 0)          1.0000
+     (91, 0)          1.0000
+     (21, 1)          1.0000
+     (63, 1)          1.0000
+     (78, 1)          1.0000
+     (81, 1)          1.0000
+     (82, 1)          1.0000
+     (99, 1)          1.0000
+      (0, 2)          1.0000
+      (4, 2)          1.0000
+      (8, 2)          1.0000
+     (10, 2)          1.0000
+     (11, 2)          1.0000
+     (13, 2)          1.0000
+     (14, 2)          1.0000
+     (15, 2)          1.0000
+     (17, 2)          1.0000
+     (18, 2)          1.0000
+     (25, 2)          1.0000
+     (29, 2)          1.0000
+     (36, 2)          1.0000
+     (39, 2)          1.0000
+     (40, 2)          1.0000
+     (46, 2)          1.0000
+     (47, 2)          1.0000
+     (49, 2)          1.0000
+     (50, 2)          1.0000
+     (51, 2)          1.0000
+     (55, 2)          1.0000
+     (56, 2)          1.0000
+     (64, 2)          1.0000
+     (65, 2)          1.0000
+     (66, 2)          1.0000
+     (68, 2)          1.0000
+     (69, 2)          1.0000
+     (70, 2)          1.0000
+     (71, 2)          1.0000
+     (94, 2)          1.0000
+     (98, 2)          1.0000
+      (2, 3)          1.0000
+      (6, 3)          1.0000
+     (19, 3)          1.0000
+     (24, 3)          1.0000
+     (28, 3)          1.0000
+     (30, 3)          1.0000
+     (37, 3)          1.0000
+     (43, 3)          1.0000
+     (45, 3)          1.0000
+     (57, 3)          1.0000
+     (58, 3)          1.0000
+     (59, 3)          1.0000
+     (60, 3)          1.0000
+     (72, 3)          1.0000
+     (79, 3)          1.0000
+     (80, 3)          1.0000
+     (84, 3)          1.0000
+     (87, 3)          1.0000
+     (95, 3)          1.0000
+    (100, 3)          1.0000
+      (7, 4)          1.0000
+     (23, 4)          1.0000
+     (31, 4)          1.0000
+     (35, 4)          1.0000
+     (42, 4)          1.0000
+     (44, 4)          1.0000
+     (48, 4)          1.0000
+     (52, 4)          1.0000
+     (54, 4)          1.0000
+     (73, 4)          1.0000
+     (88, 4)          1.0000
+     (97, 4)          1.0000
+      (5, 5)          1.0000
+     (33, 5)          1.0000
+     (34, 5)          1.0000
+     (76, 5)          1.0000
+     (85, 5)          1.0000
+     (93, 5)          1.0000
+     (96, 5)          1.0000
+      (1, 6)          1.0000
+     (12, 6)          1.0000
+     (16, 6)          1.0000
+     (20, 6)          1.0000
+     (26, 6)          1.0000
+     (27, 6)          1.0000
+     (38, 6)          1.0000
+     (41, 6)          1.0000
+     (61, 6)          1.0000
+     (62, 6)          1.0000
+     (67, 6)          1.0000
+     (74, 6)          1.0000
+     (75, 6)          1.0000
+     (77, 6)          1.0000
+     (83, 6)          1.0000
+     (86, 6)          1.0000
+     (92, 6)          1.0000
+

@@ -1,0 +1,146 @@
+
+DATA_PATH, n, d, k: /home/hrgat/Namizje/Shudian/2021.0096-master/src/clustering_c++/git_instances/gaussians1.txt 100 2 2
+LOG_PATH: /home/hrgat/Namizje/Shudian/2021.0096-master/src/clustering_c++/git_instances_results/gaussians1_2.txt
+
+BRANCH_AND_BOUND_TOL: 0.0001
+BRANCH_AND_BOUND_PARALLEL: 2
+BRANCH_AND_BOUND_MAX_NODES: 100
+BRANCH_AND_BOUND_VISITING_STRATEGY: 0
+
+SDP_SOLVER_SESSION_THREADS_ROOT: 24
+SDP_SOLVER_SESSION_THREADS: 24
+SDP_SOLVER_FOLDER: /home/hrgat/Namizje/Shudian/SDPNAL+v1.0/
+SDP_SOLVER_TOL: 1e-05
+SDP_SOLVER_VERBOSE: 1
+SDP_SOLVER_MAX_CP_ITER_ROOT: 40
+SDP_SOLVER_MAX_CP_ITER: 20
+SDP_SOLVER_CP_TOL: 1e-05
+SDP_SOLVER_MAX_INEQ: 100000
+SDP_SOLVER_INHERIT_PERC: 1
+SDP_SOLVER_EPS_INEQ: 0.0001
+SDP_SOLVER_EPS_ACTIVE: 1e-06
+SDP_SOLVER_MAX_PAIR_INEQ: 100000
+SDP_SOLVER_PAIR_PERC: 0.05
+SDP_SOLVER_MAX_TRIANGLE_INEQ: 100000
+SDP_SOLVER_TRIANGLE_PERC: 0.05
+
+KMEANS_SDP_BASED: 1
+KMEANS_MAX_ITER: 100
+KMEANS_N_START: 50
+KMEANS_VERBOSE: 0
+
+
+|    N| NODE_PAR|    NODE|      LB_PAR|          LB|  FLAG|  TIME (s)| CP_ITER| CP_FLAG|   CP_INEQ|     PAIR  TRIANGLE    CLIQUE|         GUB|     I      J|     NODE_GAP|          GAP|  OPEN|
+|  100|       -1|       0|        -inf|    0.607755|     0|         0|       0|       2|         0|        0         0         0|   0.607787*|    -1     -1|   5.2275e-05|   5.2275e-05|     0|
+
+WALL_TIME: 3 sec
+N_NODES: 1
+AVG_INEQ: 0
+AVG_CP_ITER: 0
+ROOT_GAP: 5.2275e-05
+GAP: 0
+BEST: 0.607787
+
+[matrix size: 100x2; n_nonzero: 100; density: 50.0%]
+
+     (50, 0)          1.0000
+     (51, 0)          1.0000
+     (52, 0)          1.0000
+     (53, 0)          1.0000
+     (54, 0)          1.0000
+     (55, 0)          1.0000
+     (56, 0)          1.0000
+     (57, 0)          1.0000
+     (58, 0)          1.0000
+     (59, 0)          1.0000
+     (60, 0)          1.0000
+     (61, 0)          1.0000
+     (62, 0)          1.0000
+     (63, 0)          1.0000
+     (64, 0)          1.0000
+     (65, 0)          1.0000
+     (66, 0)          1.0000
+     (67, 0)          1.0000
+     (68, 0)          1.0000
+     (69, 0)          1.0000
+     (70, 0)          1.0000
+     (71, 0)          1.0000
+     (72, 0)          1.0000
+     (73, 0)          1.0000
+     (74, 0)          1.0000
+     (75, 0)          1.0000
+     (76, 0)          1.0000
+     (77, 0)          1.0000
+     (78, 0)          1.0000
+     (79, 0)          1.0000
+     (80, 0)          1.0000
+     (81, 0)          1.0000
+     (82, 0)          1.0000
+     (83, 0)          1.0000
+     (84, 0)          1.0000
+     (85, 0)          1.0000
+     (86, 0)          1.0000
+     (87, 0)          1.0000
+     (88, 0)          1.0000
+     (89, 0)          1.0000
+     (90, 0)          1.0000
+     (91, 0)          1.0000
+     (92, 0)          1.0000
+     (93, 0)          1.0000
+     (94, 0)          1.0000
+     (95, 0)          1.0000
+     (96, 0)          1.0000
+     (97, 0)          1.0000
+     (98, 0)          1.0000
+     (99, 0)          1.0000
+      (0, 1)          1.0000
+      (1, 1)          1.0000
+      (2, 1)          1.0000
+      (3, 1)          1.0000
+      (4, 1)          1.0000
+      (5, 1)          1.0000
+      (6, 1)          1.0000
+      (7, 1)          1.0000
+      (8, 1)          1.0000
+      (9, 1)          1.0000
+     (10, 1)          1.0000
+     (11, 1)          1.0000
+     (12, 1)          1.0000
+     (13, 1)          1.0000
+     (14, 1)          1.0000
+     (15, 1)          1.0000
+     (16, 1)          1.0000
+     (17, 1)          1.0000
+     (18, 1)          1.0000
+     (19, 1)          1.0000
+     (20, 1)          1.0000
+     (21, 1)          1.0000
+     (22, 1)          1.0000
+     (23, 1)          1.0000
+     (24, 1)          1.0000
+     (25, 1)          1.0000
+     (26, 1)          1.0000
+     (27, 1)          1.0000
+     (28, 1)          1.0000
+     (29, 1)          1.0000
+     (30, 1)          1.0000
+     (31, 1)          1.0000
+     (32, 1)          1.0000
+     (33, 1)          1.0000
+     (34, 1)          1.0000
+     (35, 1)          1.0000
+     (36, 1)          1.0000
+     (37, 1)          1.0000
+     (38, 1)          1.0000
+     (39, 1)          1.0000
+     (40, 1)          1.0000
+     (41, 1)          1.0000
+     (42, 1)          1.0000
+     (43, 1)          1.0000
+     (44, 1)          1.0000
+     (45, 1)          1.0000
+     (46, 1)          1.0000
+     (47, 1)          1.0000
+     (48, 1)          1.0000
+     (49, 1)          1.0000
+
