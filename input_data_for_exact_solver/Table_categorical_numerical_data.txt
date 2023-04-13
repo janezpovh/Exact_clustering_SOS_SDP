@@ -1,0 +1,24 @@
+data status
+dermatology mixed (integer, representing categorie)
+ecoli numerical
+glass numerical
+haberman numerical
+heart-statlog mixed (sex)
+iono  numerical
+iris numerical
+sonar numerical
+tae mixed
+thy numerical
+wine numerical
+zoo mixed
+3-spiral numerical
+3MC numerical
+blobs numerical
+flame numerical
+gaussian 1 numerical
+insect numerical
+lsun numerical
+pathbased numerical
+zelnik_1 numerical
+zelnik_2 numerical
+zelnik_6 numerical
